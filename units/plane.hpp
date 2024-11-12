@@ -52,8 +52,8 @@ public:
     if (total_weight <
         requiredWeight) { // Если даже убирая пассажиров эконома не сможем
                           // разместить, то и удалять не надо
-      // std::cout << "!!CANNOT ADD LUGGAGE OF PASSENGER ID = " << passengerID
-      //           << "!!" << std::endl;
+      std::cout << "!!CANNOT ADD LUGGAGE OF PASSENGER, ID = " << passengerID
+                << "!!" << std::endl;
       return;
     }
 
