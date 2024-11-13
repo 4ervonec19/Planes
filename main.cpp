@@ -52,7 +52,8 @@ void handlePassengerInput() {
     std::vector<int> luggage;
 
     if (passengerType == "ECONOMY") {
-      // Для эконом-класса: первая позиция — ручная кладь, остальные — багаж
+      // Для эконом-класса: первая позиция — ручная кладь, остальные (вторая) —
+      // багаж
       if (!allWeights.empty()) {
         handLuggage.push_back(allWeights[0]);
       }
