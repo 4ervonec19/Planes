@@ -2,7 +2,7 @@
 #include <cassert>
 #include <iostream>
 
-int Unit::currentID = 0;
+// int Unit::currentID = 0;
 
 // Тест для класса Pilot
 void testPilot() {

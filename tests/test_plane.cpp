@@ -3,7 +3,7 @@
 #include <iostream>
 #include <memory>
 
-int Unit::currentID = 0;
+// int Unit::currentID = 0;
 
 void testPlane() {
   // Инициализация самолёта с лимитами

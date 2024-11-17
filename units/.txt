@@ -14,6 +14,14 @@ g++ -std=c++20 -O2 -fsanitize=address \
     units/crew_members.cpp \
     -o main
 
+g++ --coverage -g -O0 -fsanitize=address -std=c++20 \
+    -Wall -Werror -Wextra units/segments.cpp \
+    tests/test_segments.cpp -o \
+    test_segments
+
+
+find ./ -iname "*.cpp" -o -iname "*.hpp" | xargs clang-format -i -style=file --dry-run --Werror
+
 find . -type f \( -name "*.gcda" -o -name "*.gcno" -o -name "*.gcov" \) -exec rm -f {} +
 
 g++ --coverage -g -O0 -fsanitize=address -std=c++20 \
